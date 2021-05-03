@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#121212"
+    android:layout_gravity="center"
+   >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ایجاد لغت جدید"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_margin="30dp"/>
+    <EditText
+        android:id="@+id/vocab_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="textPersonName"
+        android:hint="واژه"
+        android:padding="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+
+
+        />
+    <EditText
+        android:id="@+id/meaning_edt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="textPersonName"
+        android:hint="معنی"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        />
+    <RadioGroup
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioGroup_vocab_level"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioEasy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ساده"
+            android:layout_marginTop="10dp"
+            android:checked="false"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#FFFFFF"
+            />
+
+        <RadioButton
+            android:id="@+id/radioMiddle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="متوسط"
+            android:checked="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <RadioButton
+            android:id="@+id/radioHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="سخت"
+            android:checked="false"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/save_vocab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/buttonbackground"
+        android:layout_gravity="center"
+        android:text="ذخیره"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+     />
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="example.javatpoint.com.optionmenu.MainActivity">
+
+    <item  android:id="@+id/profile2"
+        android:title=" پروفایل"/>
+    <item  android:id="@+id/exit2"
+        android:title="خروج"
+        app:showAsAction="withText"/>
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D2E2E">
+
+    <LinearLayout
+        android:id="@+id/L1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_marginRight="15dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تنظیمات پروفایل"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ECE8E8"
+            android:layout_marginBottom="15dp"
+            android:textSize="30dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/dark_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark"
+                android:textColor="#EFECEC"
+                android:background="@drawable/dark_btn"
+                android:layout_marginRight="10dp"/>
+            <Button
+                android:id="@+id/light_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/light_btn"
+                android:text="Light"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/L1"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp">
+        <EditText
+            android:id="@+id/user_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="نام کاربری"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/edittextbackground"
+            android:textColor="#111"
+            android:textSize="25dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            />
+        <EditText
+            android:id="@+id/status_edt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="وضعیت"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="25dp"
+            android:background="@drawable/edittextbackground"
+            android:textColor="#111"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            />
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="خانم"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp"
+                android:layout_marginRight="10dp"
+                />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آقا"
+                android:textColor="#FFFFFF"
+                android:checked="false"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:textSize="20dp" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save_info_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ذخیره"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/buttonbackground"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
